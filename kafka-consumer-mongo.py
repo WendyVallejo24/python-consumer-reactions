@@ -68,8 +68,8 @@ for msg in consumer:
        db.artists_summary_reactions.delete_many({})
        for i in agg_result:
          print(i)
-         summary_id = db.artists_summary_reactions.insert_one(i)
-         print("Summary Reactions inserted with record ids", summary_id)
+         summaryReactions_id = db.artists_summary_reactions.insert_one(i)
+         print("Summary Reactions inserted with record ids", summaryReactions_id)
 
     except Exception as e:
        print(f'group by caught {type(e)}: ')
