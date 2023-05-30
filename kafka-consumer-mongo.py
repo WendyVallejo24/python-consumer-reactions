@@ -54,7 +54,7 @@ for msg in consumer:
     
     # Create dictionary and ingest data into MongoDB
     try:
-       agg_result = db.memes_reactions.aggregate([
+       agg_result = db.artists_reactions.aggregate([
         {
             "$group": {
                 "_id": {
